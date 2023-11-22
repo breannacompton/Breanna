@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <style>
+        /* Add your styles here */
+    </style>
+</head>
+<body>
+
+    <h1>Order Form</h1>
+
+    <form action="submit_order.php" method="post">
+        <label for="product">Select a product:</label>
+        <select id="product" name="product">
+            <option value="product1">Product 1</option>
+            <option value="product2">Product 2</option>
+            <option value="product3">Product 3</option>
+            <!-- Add more products as needed -->
+        </select>
+
+        <br>
+
+        <label for="pickupTime">Select pick-up time:</label>
+        <input type="datetime-local" id="pickupTime" name="pickupTime">
+
+        <br>
+
+        <label for="pickupLocation">Select pick-up location:</label>
+        <input type="text" id="pickupLocation" name="pickupLocation">
+
+        <br>
+
+        <input type="submit" value="Place Order">
+    </form>
+
+</body>
+</html>
